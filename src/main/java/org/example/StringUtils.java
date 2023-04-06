@@ -7,7 +7,9 @@ import java.math.BigDecimal;
 public class StringUtils {
 
     private StringUtils() {}
+
     public static boolean isPositiveNumber(String str) {
+        System.out.println("Running org.example.StringUtils.isPositiveNumber(" + str + ")");
         if (!NumberUtils.isCreatable(str)) {
             return false;
         }
